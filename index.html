@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body class="background">
+    <!-- nav bar items -->
+    
+    <header class="text-black-600 bg-yellow-500">
+      <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
+          <img src="CAKE.jpg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-0 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </img>
+          <span class="ml-3 text-xl">CRACKERY BAKERY</span>
+        </a>
+        
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center nav-sections">
+          <a href="/index.html" class="mr-5 hover:text-green-700">Home</a>
+          <a href="/varities.html" class="mr-5 hover:text-green-700">Varities</a>
+          <a href="/about.html" class="mr-5 hover:text-green-700">About</a>
+          <a href="/contact.html" class="mr-5 hover:text-green-700">Contact us</a>
+        </nav>
+        <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base mt-1 md:mt-0 button-edit">Button
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button> -->
+        <!-- <div class="responsive"> -->
+        <form class="search-form">
+          <input type="text" class="search-input" placeholder="Search...">
+          <button type="submit" class="search-button">Search</button>
+      </form>
+      <!-- </div> -->
+  
+  <div class="nav-icons">
+    <a href="/varities.html" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="#" class="nav-icon user-icon"><i class="fa-solid fa-user" id="userIcon"></i></a>
+    <button class="mode-toggle" id="modeToggle"><i class="fas fa-moon"></i></button>
+  </div>
+ </nav>
+
+    </header>
+    <!-- main content -->
+    <div id="ConTent" class="content">
+   <!-- carousels -->
+   <div id="carouselExampleIndicators" class="carousel slide spacing-top carousel-container" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/images/2.jpg" class="d-block w-" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="3.jpg" class="d-block w-" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img src="4.jpg" class="d-block w-" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- cards  -->
+
+  <h1 class="adjust"> Our Varities </h1>
+
+  <section class="text-gray-600 body-font"> 
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="6.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1 h3-class">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+          <p class="mt-1">$16.00</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="7.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1 h3-class">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <p class="mt-1">$21.15</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="8.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <p class="mt-1">$12.00</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="9.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <p class="mt-1">$18.40</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="10.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+          <p class="mt-1">$16.00</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="11.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+          <p class="mt-1">$21.15</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="12.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+          <p class="mt-1">$12.00</p>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="13.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+          <p class="mt-1">$18.40</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+    </div>
+
+     <!-- Login Modal -->
+     <div id="loginModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="loginClose">&times;</span>
+          <h2 id="loginColor" class="h2">Login</h2>
+          <form class="login-sign" id="loginForm">
+              <label for="loginEmail">Email:</label>
+              <input type="email" id="loginEmail" name="loginEmail" required>
+              <label for="loginPassword">Password:</label>
+              <input type="password" id="loginPassword" name="loginPassword" required>
+              <button type="submit">Login</button>
+          </form>
+          <p id="paraGraph" class="p">Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+      </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signUpModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="signUpClose">&times;</span>
+        <h2>Sign Up</h2>
+        <form class="login-sign" id="signUpForm">
+            <label for="signUpName">Name:</label>
+            <input type="text" id="signUpName" name="signUpName" required>
+            <label for="signUpEmail">Email:</label>
+            <input type="email" id="signUpEmail" name="signUpEmail" required>
+            <label for="signUpPassword">Password:</label>
+            <input type="password" id="signUpPassword" name="signUpPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+</div>
+    <!-- <section id="varieties" class="varieties-section">
+      <div class="container">
+          <h2>Our Varieties</h2>
+          <p>Explore our wide range of baked goods, crafted with the finest ingredients to delight your taste buds.</p>
+          
+          <div class="variety-content">
+              <div class="variety-item">
+                  <img src="cake.jpg" alt="Cakes">
+                  <h3>Cakes</h3>
+                  <p>Delicious and beautifully decorated cakes for every occasion.</p>
+              </div>
+              <div class="variety-item">
+                  <img src="cookies.jpg" alt="Cookies">
+                  <h3>Cookies</h3>
+                  <p>Crunchy, chewy, and utterly irresistible cookies in various flavors.</p>
+              </div>
+              <div class="variety-item">
+                  <img src="bread.jpg" alt="Bread">
+                  <h3>Bread</h3>
+                  <p>Freshly baked bread with a perfect crust and soft, fluffy inside.</p>
+              </div>
+              <div class="variety-item">
+                  <img src="pastries.jpg" alt="Pastries">
+                  <h3>Pastries</h3>
+                  <p>Flaky, buttery pastries filled with delightful creams and fruits.</p>
+              </div>
+              <!- Add more variety items as needed -->
+          <!-- </div>
+      </div>
+  </section> --> 
+ 
+     <!-- Footer Section -->
+     <footer class="footer">
+      <div class="container">
+          <div class="footer-columns">
+              <div class="footer-column">
+                  <h4>About Us</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend.</p>
+              </div>
+              <div class="footer-column">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/varities.html">Varieties</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="/contact.html">Contact us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h4>Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="footer-column">
+                  <h4>Subscribe</h4>
+                  <form class="subscribe-form">
+                      <input type="email" placeholder="Your email address">
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Cracker Bakery. All rights reserved.</p>
+      </div>
+  </footer>
+  
+        
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="scripts.js"></script>
+        <script>
+          // search bar 
+          document.querySelector('.search-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.querySelector('.search-input').value;
+    alert('Search query: ' + query);
+    // You can replace the alert with the actual search logic
+});
+// scripts.js...
+
+// scripts.js
+
+
+// dark mode 
+document.addEventListener('DOMContentLoaded', function () {
+    const modeToggle = document.getElementById('modeToggle');
+    const body = document.body;
+
+    // Check if the user has a preferred mode
+    if (localStorage.getItem('dark-mode') === 'true') {
+        body.classList.add('dark-mode');
+        modeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+        modeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+
+    modeToggle.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            modeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            localStorage.setItem('dark-mode', 'true');
+        } else {
+            modeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            localStorage.setItem('dark-mode', 'false');
+        }
+    });
+});
+
+
+// scripts.js
+// scripts.js
+const toggleButton = document.getElementById('modeToggle');
+const body = document.body;
+const cartCount = document.getElementById('cartCount');
+const cartDetails = document.getElementById('cartDetails');
+const loginModal = document.getElementById('loginModal');
+const signUpModal = document.getElementById('signUpModal');
+const loginClose = document.getElementById('loginClose');
+const signUpClose = document.getElementById('signUpClose');
+const showSignUp = document.getElementById('showSignUp');
+const showLogin = document.getElementById('showLogin');
+const userIcon = document.querySelector('.user-icon');
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+
+
+
+// Update cart count
+function updateCartCount() {
+    cartCount.textContent = cartItems.length;
+}
+
+// Update cart details
+function updateCartDetails() {
+    cartDetails.innerHTML = '';
+    cartItems.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = item;
+        cartDetails.appendChild(itemElement);
+    });
+}
+
+// Add item to cart
+function addToCart(item) {
+    cartItems.push(item);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    updateCartCount();
+    updateCartDetails();
+}
+
+// Add to cart button event listeners
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const item = event.target.getAttribute('data-item');
+        addToCart(item);
+    });
+});
+
+// Show login modal
+userIcon.addEventListener('click', () => {
+    loginModal.style.display = 'block';
+});
+
+// Close login modal
+loginClose.addEventListener('click', () => {
+    loginModal.style.display = 'none';
+});
+
+// Close sign up modal
+signUpClose.addEventListener('click', () => {
+    signUpModal.style.display = 'none';
+});
+
+// Switch to sign up modal
+showSignUp.addEventListener('click', (event) => {
+    event.preventDefault();
+    loginModal.style.display = 'none';
+    signUpModal.style.display = 'block';
+});
+
+// Switch to login modal
+showLogin.addEventListener('click', (event) => {
+    event.preventDefault();
+    signUpModal.style.display = 'none';
+    loginModal.style.display = 'block';
+});
+
+// Login form submission
+document.getElementById('loginForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    // Implement your login logic here
+    alert('Logged in successfully');
+    loginModal.style.display = 'none';
+});
+
+// Sign up form submission
+document.getElementById('signUpForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const name = document.getElementById('signUpName').value;
+    const email = document.getElementById('signUpEmail').value;
+    const password = document.getElementById('signUpPassword').value;
+    // Implement your sign up logic here
+    alert('Signed up successfully');
+    signUpModal.style.display = 'none';
+});
+
+// On page load, check local storage to set the initial state
+window.addEventListener('load', () => {
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+        if (contentSection) contentSection.classList.add('dark-mode');
+        document.querySelector('.content').classList.add('dark-mode');
+    }
+    updateCartCount();
+    updateCartDetails();
+});
+
+// Order Now button functionality
+const orderNowButton = document.getElementById('orderNowButton');
+
+orderNowButton.addEventListener('click', () => {
+    if (cartItems.length > 0) {
+        alert('Your order has been placed!');
+        cartItems = [];
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        updateCartCount();
+        updateCartDetails();
+    } else {
+        alert('Your cart is empty. Please add items to your cart before ordering.');
+    }
+});
+
+
+
+
+        </script>
+        <script src="server.js"></script>
+        <script>
+
+        </script>
+       
+    
+</body>
+</html>
